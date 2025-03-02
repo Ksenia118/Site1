@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+  main { text-align: center}
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+  nav ul li a {
+    color: white
+}
+  .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+}
+   @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      section {
+        padding: 10px;
+        background-color:f4f4f4
+      }
+
+      header, footer {
+        padding: 15px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+  </style> 
+</head>
+<body>
+  <header>
+    <h1>Контакти</h1>
+  </header>
+  <section>
+    <div class="gallery">
+      <a href="https://postimages.org/" target="_blank">
+        <img src="https://i.postimg.cc/g0Cw8v67/8b4dfa45cd4d5a4d7e1fc5f5d17af910.jpg">
+      </a>
+    </div>
+    <form action="send_form.php" method="post">
+      <label for="name">Ім'я:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Електронна пошта:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Повідомлення:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Надіслати</button>
+    </form>
+    <p>Електронна пошта: savinova.kseniia@chnu.edu.ua</p>
+    <p>Телефон: +380508805281</p>
+  </section>
+  <footer>
+        <p>© 2024 Мій Сайт Візитка</p>
+    </footer>
+</body>
+</html>

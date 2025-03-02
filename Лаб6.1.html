@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мої роботи</title>
+  <link rel="stylesheet" href="styles.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+  main { text-align: center}
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+  nav ul li a {
+    color: white
+}
+  .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+}
+   @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      section {
+        padding: 10px;
+        background-color:f4f4f4
+      }
+
+      header, footer {
+        padding: 15px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+  </style> 
+  </head>
+<body>
+  <header>
+    <h1>Мої роботи</h1>
+  </header>
+  <section>
+    <div class="gallery">
+      <figure>
+        <a href='https://postimg.cc/qzbr17WZ' target='_blank'><img src='https://i.postimg.cc/nhZLcj2Z/IMG-20240822-185747.jpg' border='0' alt='IMG-20240822-185747'/></a>
+        <figcaption>"Кінь" <br>папір, вугільні олівці</br></figcaption>
+      </figure>
+      <figure>
+        <a href='https://postimg.cc/hf8G0xB8' target='_blank'><img src='https://i.postimg.cc/5NTFbqKr/IMG-20241111-094400.jpg' border='0' alt='IMG-20241111-094400'/></a>
+        <figcaption>"Рись"<br>папір, олівці</br></figcaption>
+      </figure>
+      <figure>
+        <a href='https://postimg.cc/CBmb6tk0' target='_blank'><img src='https://i.postimg.cc/PJkKNnqC/IMG-59bdfce4236da28c3100821613f5de55-V.jpg' border='0' alt='IMG-59bdfce4236da28c3100821613f5de55-V'/></a>
+        <figcaption>"Яблука"<br>папір, пастель</br></figcaption>
+      </figure>
+    </div>
+  </section>
+  <footer>
+        <p>© 2024 Мій Сайт Візитка</p>
+    </footer>
+</body>
+</html>
